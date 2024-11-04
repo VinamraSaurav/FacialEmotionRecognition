@@ -5,3 +5,6 @@ tensorflow-hub
 pandas
 matplotlib
 keras
+# nltk
+# transformers
+# scikit-learn

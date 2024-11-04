@@ -71,19 +71,24 @@ The project has the following folder structure:
 FacialEmotionRecognition/
 │
 ├── src/
-│   ├── dataset_prepare.py      # Script to prepare the dataset from CSV
-│   ├── emotions.py              # Real-time emotion detection script
-│   ├── train.py                 # Script for training the model
+│   ├── dataset_prepare.py          # Script to prepare the dataset from CSV
+│   ├── emotions.py                 # Real-time emotion detection script
+│   ├── train.py                    # Script for training the model
+│   └── haarcascade_frontalface_default.xml  # Haar Cascade file for face detection
 │
-├── data/
-│   ├── angry/                   # Folder containing images of angry faces
-│   ├── sad/                     # Folder containing images of sad faces
-│   ├── happy/                   # Folder containing images of happy faces
-│   └── ...                      # Additional emotion folders
+├── data/                           # Directory containing folders for each emotion
+│   ├── angry/                      # Folder for images of angry faces
+│   ├── sad/                        # Folder for images of sad faces
+│   ├── happy/                      # Folder for images of happy faces
+│   └── ...                         # Additional emotion folders
 │
-├── model.h5                     # Trained model file
-├── haarcascade_frontalface_default.xml  # Haar Cascade file for face detection
-└── requirements.txt             # List of dependencies
+├── venv/                           # Python virtual environment directory
+│
+├── model.h5                        # Saved trained model file
+├── fer2013.csv                     # Dataset in CSV format
+├── README.md                       # Project documentation file
+└── requirements.txt                # List of dependencies
+
 ```
 
 ## Preparing the Dataset 🗃️
