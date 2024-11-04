@@ -4,16 +4,15 @@
 This project implements a real-time facial emotion detection system using deep learning techniques. The model is trained to recognize emotions from facial expressions in images or video streams.
 
 ## Table of Contents 📚
-- [Cloning the Repository](#cloning-the-repository)
-- [Dataset](#dataset)
-- [Setting Up the Virtual Environment](#setting-up-the-virtual-environment)
+- [Cloning the Repository](#cloning-the-repository-)
+- [Dataset](#dataset-)
+- [Setting Up the Virtual Environment](#setting-up-the-virtual-environment-️)
 - [Requirements](#requirements-)
-- [Folder Structure](#folder-structure)
-- [Preparing the Dataset](#preparing-the-dataset)
-- [Training the Model](#training-the-model)
-- [Real-time Emotion Detection](#real-time-emotion-detection)
-- [Haarcascade Frontal Face Detection](#haarcascade-frontal-face-detection)
-- [License](#license)
+- [Folder Structure](#folder-structure-️)
+- [Preparing the Dataset](#preparing-the-dataset-️)
+- [Training the Model](#training-the-model-)
+- [Real-time Emotion Detection](#real-time-emotion-detection-)
+- [Haarcascade Frontal Face Detection](#haarcascade-frontal-face-detection-)
 
 ## Cloning the Repository 🧑‍💻
 
@@ -27,6 +26,8 @@ cd FacialEmotionRecognition
 ## Dataset 📊
 
 The project includes the `fer2013.csv` dataset, which contains facial expressions labeled with their corresponding emotions. This dataset is crucial for training the emotion detection model.
+
+Download the `fer2013.csv` dataset from sources like [Kaggle](https://www.kaggle.com/datasets/msambare/fer2013) and save it to the root directory of this project. 
 
 ## Setting Up the Virtual Environment 🛠️
 
@@ -63,6 +64,7 @@ The following packages are required to run this project:
 - Matplotlib
 
 These dependencies are specified in the requirements.txt file, and you can install them using the above command.
+
 ## Folder Structure 🗂️
 
 The project has the following folder structure:
@@ -93,9 +95,8 @@ FacialEmotionRecognition/
 
 ## Preparing the Dataset 🗃️
 
-Download the `fer2013.csv` dataset from sources like [Kaggle](https://www.kaggle.com/datasets/msambare/fer2013) and save it to the root directory of this project. This file contains images of facial expressions labeled with corresponding emotions, essential for training and organizing the dataset.
 
-Once downloaded, use the `dataset_prepare.py` script to process the CSV file, which will organize the images into folders based on emotions.
+Once you have the 'fer2013.csv' in your root directory, use the `dataset_prepare.py` script to process the CSV file, which will organize the images into folders based on emotions.
 
 Run the following command to prepare the dataset:
 
@@ -103,6 +104,10 @@ Run the following command to prepare the dataset:
 python src/dataset_prepare.py
 ```
 This script reads ```fer2013.csv``` in root directory and creates emotion-specific folders with the images organized for model training. Make sure fer2013.csv is stored in the root directory of the project before running this command.
+
+<div style="color: red; font-weight: bold; font-size: 1.2em;">
+🚨 ** NOTE **  - If you plan to use a different CSV file, please ensure you update the `data_dir` variable in `dataset_prepare.py` to reflect the correct file name and location ! 📂💡 
+</div>
 
 
 ## Training the Model 🚀
